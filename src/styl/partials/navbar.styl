@@ -1,5 +1,5 @@
 .site-navbar
-  background white
+  background transparent
   display flex
   align-items center
   height 78px // Change
@@ -8,9 +8,10 @@
   top 0
   width 100%
   z-index 12
+  padding: remify(35px)
 
   & + main
-    padding-top 78px // Change
+    padding-top 0 // Change
 
 .site-navbar__menu-trigger,
 .site-navbar__mobile-logo-container
@@ -35,11 +36,12 @@
   justify-content flex-end
 
 .site-navbar__menu-link
-  color black // Change
-  font-size remify(19) // Change
+  color #ffffff // Change
+  font-size remify(12px) // Change
+  margin-right: 15px 
 
   &:hover, &.active
-    color white // Change
+    color #fc4e44 // Change
 
 @media screen and (max-width: 876px) // Change
   .site-navbar
@@ -66,7 +68,7 @@
     font-size 18px // Change
 
   .site-navbar__menu-container
-    background white // Change
+    background transparent // Change
     height 100vh
     margin-right 0
     overflow-y auto
