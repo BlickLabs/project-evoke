@@ -27,19 +27,61 @@
 .index-banner-box1
   display: flex;
 
-.index-title_1
+.index-banner-box2
+  display: flex;
+  flex-direction: column;
+
+.index-banner-box1__title1
   color: #ffffff;
   font-size: remify(45px);
   text-align: center;
 
-.index-title_2
+.index-banner-box1__title2
   color: #fc4e44;
   font-size: remify(45px);
   text-align: center;
   padding-left: remify(13px);
 
-.index-title_3
+.index-banner-box2__title_3
   color: #ffffff;
   font-size: remify(23px);
   text-align: center;
   margin-top: 48px;
+
+// Slick Carousel
+
+.slick-dots {
+  position: absolute;
+  bottom: 4%;
+  left: 43%;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 10px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 1;
+  color: #e14b45;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #d8d8d8;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
