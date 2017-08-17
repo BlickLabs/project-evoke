@@ -116,6 +116,98 @@ a {
   flex-direction: column;
 }
 
+// Blog
+.blog {
+  background-color: #2d3746;
+  display: flex; 
+  align-items: center;
+  flex-direction: column;
+}
+
+.blog-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: remify(30px);
+  margin: 94px 0 51px;
+}
+
+.blog-box-1, .blog-box-2  {
+  display: flex;
+  flex-direction: column;
+  width: 934px
+  background-color: #ffffff;
+}
+
+.blog-box-2 {
+  margin-top: 45px;
+}
+
+.blog-box-2__img {
+  position: relative;
+}
+
+.blog-box-2__mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fc4e44;
+  width: 100%;
+  height 98.5%;
+  opacity: 0.8;
+}
+
+.blog-box-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 144px 0 138px;
+  .blog-box-content__admin {
+    color: #929292;
+    font-size: remify(11px);
+    margin: 28px 0 6.5px;
+  }
+  .blog-box-content__title {
+    color: #2d3746;
+    font-size: remify(17px);
+  }
+  hr {
+    width: 24px;
+    border-top: #fc4e44 solid 1px;
+    margin: 12.3px 0 12.3px;
+  }
+  .blog-box-content__paragraph{
+    color: #2d3746;
+    font-size: remify(12px);
+  }
+  .blog-box-content__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: remify(10px);
+    color: #ffffff;
+    background-color: #fc4e44;
+    width: 94px;
+    height: 31.8px;
+    border-radius: 28px;
+    cursor: pointer;
+    margin: 21.5px 0 27px;
+  }
+}
+
+.blog-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: remify(10px);
+  color: #ffffff;
+  background-color: #fc4e44;
+  width: 130px;
+  height: 35px;
+  border-radius: 28px;
+  cursor: pointer;
+  margin: 67px 0 87px
+}
 // Slick Carousel
 
 .slick-dots {
