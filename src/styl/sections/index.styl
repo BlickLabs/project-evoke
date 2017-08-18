@@ -7,6 +7,22 @@
 a {
   text-decoration: none;
 }
+
+// Main Button
+.main-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: remify(10px);
+  color: #ffffff;
+  background-color: #fc4e44;
+  width: 130px;
+  height: 35px;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
 // Carousel 
 .carousel-1 {
   position: relative;
@@ -102,20 +118,6 @@ a {
       font-size: remify(15px);
       line-height: 1.47;
     }
-    span {
-      margin-top: 53px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-transform: uppercase;
-      font-size: remify(10px);
-      color: #ffffff;
-      background-color: #fc4e44;
-      width: 130px;
-      height: 35px;
-      border-radius: 28px;
-      cursor: pointer;
-    }
 }
 
 .index-somos__ruler {
@@ -126,6 +128,9 @@ a {
   margin-top: 56px;
 }
 
+.somos-button {
+  margin: 64px 0 0
+}
 //////////// Servicios /////////////
 .servicios-title {
   text-align: center;
@@ -154,22 +159,22 @@ a {
   margin: 94px 0 51px;
 }
 
-.blog-box-1, .blog-box-2  {
+.blog-box1, .blog-box2  {
   display: flex;
   flex-direction: column;
   width: 934px
   background-color: #ffffff;
 }
 
-.blog-box-2 {
+.blog-box2 {
   margin-top: 45px;
 }
 
-.blog-box-2__img {
+.blog-box2__img {
   position: relative;
 }
 
-.blog-box-2__mask {
+.blog-box2__mask {
   position: absolute;
   left: 0;
   top: 0;
@@ -180,7 +185,7 @@ a {
   transition: 0.5s;
 }
 
-.blog-box-2__mask:hover {
+.blog-box2__mask:hover {
   position: absolute;
   left: 0;
   top: 0;
@@ -230,20 +235,8 @@ a {
 }
 
 .blog-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  font-size: remify(10px);
-  color: #ffffff;
-  background-color: #fc4e44;
-  width: 130px;
-  height: 35px;
-  border-radius: 28px;
-  cursor: pointer;
-  margin: 67px 0 87px
+  margin: 67px 0 87px;
 }
-
 /////////// Nuestra Cultura ///////////
 .cultura {
   display: flex;
@@ -263,6 +256,40 @@ a {
   width: 56.09%;
 }
 
+.cultura-box1 {
+  margin: 81px 0 0
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 10.56em 0;
+}
+
+.cultura-box1__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 187px;
+    .cultura-box1__card-title {
+      font-size: remify(15px);
+      color: #2d3746;
+      text-transform: uppercase;
+    }
+    hr {
+      width: 72.72%;
+      border: solid 1px #eaeaea;
+      margin: 10px 0 10px;
+    }
+    .cultura-box1__card-paragraph {
+      font-size: remify(11px);
+      color: #2d3746;
+      text-align: center;
+      line-height: 1.36;
+    }
+}
+
+.cultura-button {
+  margin: 67px 0 88px;
+}
 // Slick Carousel
 
 .slick-dots {
