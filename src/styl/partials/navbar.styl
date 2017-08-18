@@ -1,5 +1,5 @@
 .site-navbar
-  background white
+  background transparent
   display flex
   align-items center
   height 78px // Change
@@ -8,9 +8,10 @@
   top 0
   width 100%
   z-index 12
+  padding: 35px
 
   & + main
-    padding-top 78px // Change
+    padding-top 0 // Change
 
 .site-navbar__menu-trigger,
 .site-navbar__mobile-logo-container
@@ -35,11 +36,22 @@
   justify-content flex-end
 
 .site-navbar__menu-link
-  color black // Change
-  font-size remify(19) // Change
+  color #ffffff // Change
+  font-size remify(12px) // Change
+  margin-right: 15px
+  display flex
+  align-items center
+  justify-content center 
 
-  &:hover, &.active
-    color white // Change
+.site-navbar__menu-link:hover
+    color #fc4e44 // Change
+
+  &.active
+    color #ffffff // Change
+    background-color #fc4e44
+    width 94px
+    height 30px
+    border-radius 100px
 
 @media screen and (max-width: 876px) // Change
   .site-navbar
@@ -66,7 +78,7 @@
     font-size 18px // Change
 
   .site-navbar__menu-container
-    background white // Change
+    background transparent // Change
     height 100vh
     margin-right 0
     overflow-y auto
@@ -93,3 +105,22 @@
     display block
     text-align left
     flex-basis 100%
+
+// shapes-div
+
+.shapes-div
+  display flex
+  align-items center
+
+.lang-div
+  height 19px
+  width 2px
+  background-color #fc4e44
+  margin 10px 10px 9px
+
+.lang-arrow
+  width 0
+  height 0
+  border-style solid
+  border-width 3.8px 1.9px 0 1.9px
+  border-color #fc4e44 transparent transparent transparent

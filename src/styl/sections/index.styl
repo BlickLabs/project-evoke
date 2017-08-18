@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+// Carousel 
+.carousel-1 {
+  position: relative;
+  width: 100%;
+}
+
+.slick-slide img {
+  max-width 100%;
+  min-height: 100vh;
+}
+
+//////////////// Title /////////////
+.index-banner {
+  position: absolute;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.index-banner-box1 {
+  display: flex;
+}
+
+.index-banner-box1__title1 {
+  color: #ffffff;
+  font-size: remify(45px);
+  text-align: center;
+}
+
+.index-banner-box1__title2 {
+  color: #fc4e44;
+  font-size: remify(45px);
+  text-align: center;
+  padding-left: remify(13px);
+}
+
+.index-banner-box2__title_3 {
+  color: #ffffff;
+  font-size: remify(23px);
+  text-align: center;
+  margin-top: 48px;
+}
+
+////////////// Conoce mas //////////////
+.index-somos {
+  margin-top: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-somos-box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 591px;
+  text-align: center;
+    p {
+      color: #2d3746;
+      font-size: remify(15px);
+      line-height: 1.47;
+    }
+    span {
+      margin-top: 53px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: remify(10px);
+      color: #ffffff;
+      background-color: #fc4e44;
+      width: 130px;
+      height: 35px;
+      border-radius: 28px;
+      cursor: pointer;
+    }
+}
+
+.index-somos__ruler {
+  display: flex;
+  align-items: center;
+  border-top: #eaeaea solid 1px;
+  width: calc(100% - 460px);
+  margin-top: 56px;
+}
+
+//////////// Servicios /////////////
+.servicios-title {
+  text-align: center;
+  color: #2d3746;
+  font-size: remify(30px);
+  margin-top: 45px;
+}
+
+.servicios__change {
+  display: flex;
+  flex-direction: column;
+}
+
+///////////// Blog //////////////
+.blog {
+  background-color: #2d3746;
+  display: flex; 
+  align-items: center;
+  flex-direction: column;
+}
+
+.blog-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: remify(30px);
+  margin: 94px 0 51px;
+}
+
+.blog-box-1, .blog-box-2  {
+  display: flex;
+  flex-direction: column;
+  width: 934px
+  background-color: #ffffff;
+}
+
+.blog-box-2 {
+  margin-top: 45px;
+}
+
+.blog-box-2__img {
+  position: relative;
+}
+
+.blog-box-2__mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fc4e44;
+  width: 100%;
+  height 98.5%;
+  opacity: 0.8;
+}
+
+.blog-box-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 144px 0 138px;
+  .blog-box-content__admin {
+    color: #929292;
+    font-size: remify(11px);
+    margin: 28px 0 6.5px;
+  }
+  .blog-box-content__title {
+    color: #2d3746;
+    font-size: remify(17px);
+  }
+  hr {
+    width: 24px;
+    border-top: #fc4e44 solid 1px;
+    margin: 12.3px 0 12.3px;
+  }
+  .blog-box-content__paragraph{
+    color: #2d3746;
+    font-size: remify(12px);
+  }
+  .blog-box-content__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: remify(10px);
+    color: #ffffff;
+    background-color: #fc4e44;
+    width: 94px;
+    height: 31.8px;
+    border-radius: 28px;
+    cursor: pointer;
+    margin: 21.5px 0 27px;
+  }
+}
+
+.blog-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: remify(10px);
+  color: #ffffff;
+  background-color: #fc4e44;
+  width: 130px;
+  height: 35px;
+  border-radius: 28px;
+  cursor: pointer;
+  margin: 67px 0 87px
+}
+
+/////////// Nuestra Cultura ///////////
+.cultura-title {
+  text-align: center;
+  color: #2d3746;
+  font-size: remify(30px);
+}
+
+// Slick Carousel
+
+.slick-dots {
+  position: absolute;
+  bottom: 4%;
+  left: 45%;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+    li {
+      margin: 0 -3px 0 
+    }
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 10px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 1;
+  color: #e14b45;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #d8d8d8;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}

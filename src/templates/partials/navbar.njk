@@ -1,16 +1,25 @@
 <nav class="site-navbar">
   <div class="site-navbar__desktop-logo-container">
-    <a href="index.html"><img src="#" alt="Logo"></a> {# Change #}
+    <a href="index.html"><img src="img/evoke_rojo_logo.png" alt="Logo"></a> {# Change #}
   </div>
   <div class="site-navbar__menu-trigger">
     <span class="fa fa-bars"></span>
   </div>
   <div class="site-navbar__menu-container">
     <div class="site-navbar__mobile-logo-container">
-      <a href="index.html"><img src="#" alt="Logo"></a> {# Change #}
+      <a href="index.html"><img src="img/evoke_rojo_logo.png" alt="Logo"></a> {# Change #}
     </div>
     <div class="site-navbar__menu">
-      <a href="index.html" class="site-navbar__menu-link {% if section == 'index' %}active{% endif %}">Home</a>
+      <a href="index.html" class="site-navbar__menu-link {% if section == 'index' %}active{% endif %}">Inicio</a>
+      <a href="" class="site-navbar__menu-link {% if section == '' %} active evoke-montserrat-light {% else %} evoke-montserrat-regular {% endif %}">Servicio</a>
+      <a href="" class="site-navbar__menu-link {% if section == '' %} active evoke-montserrat-light {% else %} evoke-montserrat-regular {% endif %}">Recursos</a>
+      <a href="" class="site-navbar__menu-link {% if section == '' %} active evoke-montserrat-light {% else %} evoke-montserrat-regular {% endif %}">Quénes somos</a>
+      <a href="" class="site-navbar__menu-link {% if section == '' %} active evoke-montserrat-light {% else %} evoke-montserrat-regular {% endif %}">Contacto</a>
+      <div class="shapes-div">
+        <div class="lang-div"></div>
+        <a href="" class="site-navbar__menu-link {% if section == '' %} active evoke-montserrat-light {% else %} evoke-montserrat-regular {% endif %}">ES</a>
+        <div class="lang-arrow"></div>
+      </div>
     </div>
   </div>
 </nav>
