@@ -144,20 +144,72 @@ a {
   background-image: url(../img/dali_background.png)
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: bottom left;
   width: 100%;
-  height: 100vh;
+  padding 45px 0 119px;
 }
 
 .servicios-title {
   text-align: center;
   color: #2d3746;
   font-size: remify(30px);
-  margin-top: 45px;
+}
+
+.servicios-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 12.5em 0;
+  margin: 65px 0 0;
 }
 
 .servicios__card {
   display: flex;
   flex-direction: column;
+  width: 18.31em;
+  align-items: center;
+  position: relative;
+    p {
+      font-size: remify(18px);
+      color: #313b49;
+      margin: 29px 0 0
+    }
+}
+
+.hex1 {
+  background-image: url(../img/servicios_hex.svg)
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 208.7px;
+  height: 189px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.servicios__card-hr {
+  border-top: solid 1px #eaeaea;
+  width: 100%;
+  margin: 46px 0 31px; 
+}
+
+.servicios__card-vr1 {
+  border-top: solid 1px #eaeaea;
+  width: 86.18%;
+  transform: rotate(90deg); 
+  position: absolute;
+  left: 105%;
+  top: 35%;
+}
+
+.servicios__card-vr2 {
+  border-top: solid 1px #eaeaea;
+  width: 86.18%;
+  transform: rotate(90deg); 
+  position: absolute;
+  left: 105%;
+  top: 53%;
 }
 
 ///////////// Blog //////////////
