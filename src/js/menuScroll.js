@@ -5,7 +5,7 @@ var siteNavbar = document.querySelector('.site-navbar');
 // navbar-fixed-top
 
 function doSomething(scroll_pos) {
-    if (scroll_pos > 600) {
+    if (scroll_pos > 1) {
         siteNavbar.classList.add('nav-standar-bg');
         siteNavbar.classList.remove('nav-transparent-bg');
     } else {
