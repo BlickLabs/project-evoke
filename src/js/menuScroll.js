@@ -2,12 +2,26 @@ var last_known_scroll_position = 0;
 var ticking = false;
 
 var siteNavbar = document.querySelector('.site-navbar');
+var siteNavbarMenuLink = document.querySelector('.site-navbar__menu-link');
+var siteNavbarActive = document.querySelector('.active');
+var siteLang = document.querySelector('.lang-div');
+var siteArrow = document.querySelector('.lang-arrow');
+
 // navbar-fixed-top
 
 function doSomething(scroll_pos) {
     if (scroll_pos > 1) {
         siteNavbar.classList.add('nav-standar-bg');
         siteNavbar.classList.remove('nav-transparent-bg');
+    } else if (window.location.pathname === '/servicios.html') {
+        if (scroll_pos >= 0) {
+            siteNavbar.classList.add('nav-standar-bg');
+            siteNavbar.classList.remove('nav-transparent-bg');
+            siteNavbarActive.classList.add('active-green');
+            siteLang.classList.add('lang-div-green');
+            siteArrow.classList.add('lang-arrow-green');
+            siteNavbarMenuLink.add('site-navbar__menu-link__green');
+        }
     } else {
         siteNavbar.classList.add('nav-transparent-bg');
         siteNavbar.classList.remove('nav-standar-bg')  
