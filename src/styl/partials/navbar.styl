@@ -42,17 +42,36 @@
   display flex
   align-items center
   justify-content center 
+  
+.site-navbar__menu-link__green
+  color #ffffff // Change
+  font-size remify(12px) // Change
+  margin-right: 15px
+  display flex
+  align-items center
+  justify-content center 
+// hover colors
 
 .site-navbar__menu-link:hover
     color #fc4e44 // Change
 
+.site-navbar__menu-link__green:hover
+    color #a2e12d // Change
+
   &.active
-    color #ffffff // Change
+    color #ffffff
     background-color #fc4e44
     width 94px
     height 30px
     border-radius 100px
 
+   &.active-green
+    color #ffffff // Change
+    background-color #a2e12d
+    width 94px
+    height 30px
+    border-radius 100px
+      
 @media screen and (max-width: 876px) // Change
   .site-navbar
     justify-content space-between
@@ -120,11 +139,21 @@
   display flex
   align-items center
 
+// shapes-div (horizontal-divider)
+
 .lang-div
   height 19px
   width 2px
   background-color #fc4e44
   margin 10px 10px 9px
+
+.lang-div-green
+  height 19px
+  width 2px
+  background-color #a2e12d
+  margin 10px 10px 9px
+
+// sahpes-div (arrows)
 
 .lang-arrow
   width 0
@@ -132,3 +161,6 @@
   border-style solid
   border-width 3.8px 1.9px 0 1.9px
   border-color #fc4e44 transparent transparent transparent
+
+.lang-arrow-green
+  border-color #a2e12d transparent transparent transparent
