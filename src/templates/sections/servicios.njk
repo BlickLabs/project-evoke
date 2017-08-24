@@ -10,10 +10,39 @@ Servicios
 {% block content %}
 <section class="servicios-view">
   <p class="evoke-montserrat-bold servicios-view__title">Servicios</p>
-  <div class="servicios-view__container">
-    <div class="servicios-view__container__card">
-      
+  <div class="servicios-container"> {# container with all hexagons #}
+    <div class="servicios__card"> 
+      <div class="hex2">
+        <div class="hex-mask"></div>
+        <img src="img/management.png" alt="engrane" width="125" height="116">
+      </div>
+      <p class="evoke-montserrat-medium">Change Management</p>
+      <div class="servicios__card-hr"></div>
+      <div class="servicios__card-vr1"></div>
     </div>
+    <div class="servicios__card"> 
+      <div class="hex2">
+        <div class="hex-mask"></div>
+        <img src="img/coaching.png" alt="engrane" width="95" height="98">
+      </div>
+      <p class="evoke-montserrat-medium">Coaching Ejecutivo</p>
+      <div class="servicios__card-hr"></div>
+    </div>
+    <div class="servicios__card"> 
+      <div class="hex2">
+        <div class="hex-mask"></div>
+        <img src="img/workshops.png" alt="engrane" width="89" height="93">
+      </div>
+      <p class="evoke-montserrat-medium">Workshops</p>
+      <div class="servicios__card-vr2"></div>
+    </div>
+    <div class="servicios__card"> 
+      <div class="hex2">
+        <div class="hex-mask"></div>
+        <img src="img/mastermind.png" width="79" height="104">
+      </div>
+      <p class="evoke-montserrat-medium">Mastermind</p>
+    </div>            
   </div>
 </section>
 {% endblock %}
