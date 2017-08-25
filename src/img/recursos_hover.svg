@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="251px" height="307px" viewBox="0 0 251 307" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 32</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-32">
+            <rect id="Rectangle-9" fill="#2D3645" opacity="0.828294837" x="0" y="0" width="251" height="307"></rect>
+            <g id="Group-9" transform="translate(4.000000, 4.000000)" opacity="0.152173913">
+                <g id="Page-1-Copy-7" transform="translate(122.500000, 90.000000) scale(1, -1) translate(-122.500000, -90.000000) ">
+                    <g id="Group-5" transform="translate(0.000000, 0.100785)" stroke="#EDEDED">
+                        <polygon id="Stroke-1" points="235.933185 0 218.185077 0 209.311024 15.3595041 218.185077 30.7193802 235.933185 30.7193802 244.807239 15.3595041"></polygon>
+                        <polygon id="Stroke-3" points="26.836895 98.2671322 9.08878759 98.2671322 0.214733864 113.626636 9.08878759 128.986512 26.836895 128.986512 35.7109488 113.626636"></polygon>
+                    </g>
+                    <polygon id="Stroke-6" stroke="#EDEDED" points="56.002443 115.352591 38.2543355 115.352591 29.3802818 130.712095 38.2543355 146.071971 56.002443 146.071971 64.8764967 130.712095"></polygon>
+                    <polygon id="Stroke-7" stroke="#EDEDED" points="56.002443 149.195566 38.2543355 149.195566 29.3802818 164.55507 38.2543355 179.914946 56.002443 179.914946 64.8764967 164.55507"></polygon>
+                    <polygon id="Fill-9" fill="#EDEDED" points="9.04405447 132.11364 0.170000744 147.473145 9.04405447 162.832649 26.7921619 162.832649 35.6662156 147.473145 26.7921619 132.11364"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
