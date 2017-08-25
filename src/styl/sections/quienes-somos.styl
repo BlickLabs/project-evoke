@@ -31,8 +31,7 @@
 
 //////////// Nuestra Cultura //////////
 .quienes-somos-view__nuestra-cultura {
-  max-width: 1096px;
-  height: 500px;
+  max-width: 900px;
   center-block();
   display: flex;
   flex-direction: column;
@@ -64,17 +63,18 @@
       align-items: center;
     }
 
-    p {
+    .nc-title {
       color: #2d3746;
       text-transform: uppercase;
-      margin: 13px 0;
+      margin: 13px 0 0;
       font-size: remify(15px); 
     }
 
-    span {
+    .nc-subtitle {
       color: #2d3746;
       font-size: remify(12px);
       line-height: 1.25;
+      margin: 13px 0 0;
     }
 }
 
@@ -89,8 +89,42 @@
 .nc-card3 {
   width: 403px
 }
+
 .nc-hex__rule {
   border-top: solid 1px #eaeaea;
   width: 100%;
   margin: 17.7px 0 0 
+}
+
+.nc-card3__subbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.subbox-1 {
+
+  p {
+    color: #2d3746;
+    font-size: remify(12px);
+    margin: 15px 0 10px;
+  }
+
+  span{
+    color: #2d3746;
+    font-size: remify(12px);
+  } 
+}
+
+.subbox-2 {
+  margin: 0 0 0 20px;
+  p {
+    color: #2d3746;
+    font-size: remify(12px);
+    margin: 15px 0 10px;
+  }
+
+  span{
+    color: #2d3746;
+    font-size: remify(12px);
+  } 
 }
