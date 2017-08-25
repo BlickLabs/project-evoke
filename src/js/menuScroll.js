@@ -8,7 +8,7 @@ function doSomething(scroll_pos) {
     if (scroll_pos > 1) {
         siteNavbar.classList.add('nav-standar-bg');
         siteNavbar.classList.remove('nav-transparent-bg');
-    } else if (window.location.pathname === '/recursos.html') {
+    } else if (window.location.pathname === '/project-evoke/recursos.html') {
         if (scroll_pos >= 0) {
             siteNavbar.classList.add('nav-standar-bg');
         }
