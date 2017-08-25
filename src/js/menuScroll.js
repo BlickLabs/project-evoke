@@ -10,11 +10,11 @@ function doSomething(scroll_pos) {
         siteNavbar.classList.remove('nav-transparent-bg');
     } else if (window.location.pathname === '/recursos.html') {
         if (scroll_pos >= 0) {
-            siteNavbar.classList.add('nav-standar-bg')
+            siteNavbar.classList.add('nav-standar-bg');
         }
     } else {
         siteNavbar.classList.add('nav-transparent-bg');
-        siteNavbar.classList.remove('nav-standar-bg')  
+        siteNavbar.classList.remove('nav-standar-bg') ; 
     }
 }
 
