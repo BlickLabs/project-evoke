@@ -2,9 +2,10 @@
   $('.clientes-carousel__container').slick({
     dots: true,
     infinite: true,
-    speed: 300,
-    slidesToShow: 1,
+    slidesToShow: 2,
+    slidesToScroll: 1,
     adaptiveHeight: true,
+    variableWidth: true,
     centerMode: true
   });
 }());
