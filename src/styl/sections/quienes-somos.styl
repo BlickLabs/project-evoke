@@ -138,11 +138,66 @@
 ////////// Nuestro Equipo ///////
 .quienes-somos-view__nuestro-equipo {
   background-color: #29313f;
+  padding: 73px 0 98px;
 }
 
 .quienes-somos-view__nuestro-equipo__title {
   color: #ffffff;
   font-size: remify(30px);
   text-align: center;
-  padding: 73px 0 67px;
+  // padding: 73px 0 67px;
+}
+
+.quienes-somos-view__nuestro-equipo__container {
+  display: flex;
+  justify-content: space-around;
+  margin: 67px 0 0;
+}
+
+.quienes-somos-view__nuestro-equipo-box1 {
+  width: 245px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  center-block();
+    
+    .ne-name {
+      color: #ffffff;
+      font-size: remify(20px);
+      margin: 21px 0 0;
+    }
+    .ne-title {
+      color: #dcdcdc;
+      font-size: remify(12px);
+      margin: 10px 0 0;
+    }
+    .ne-ruler {
+      border-top: solid 1px #62ceca;
+      margin: 10px 0 ;
+      width: 80%;
+    }
+    .ne-content {
+      color: #ffffff;
+      font-size: remify(12px);
+      text-align: center;
+      line-height: 1.33;
+    }
+    .ne-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 105px;
+      height: 35px;
+      border-radius: 28px;
+      color: #ffffff;
+      background-color: #62ceca;
+      font-size: remify(10px);
+      text-transform: uppercase;
+      margin: 27px 0 0;
+      cursor: pointer;
+    }
+}
+
+.quienes-somos-view__nuestro-equipo-box2 {
+   border: solid 1px #eaeaea;
 }
