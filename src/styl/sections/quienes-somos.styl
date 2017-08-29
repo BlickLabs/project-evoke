@@ -261,6 +261,7 @@
 
 .clientes-carousel__container {
   margin: 0 135px
+  position: relative;
     .slick-center {
       display: flex;
       flex-direction: column;
@@ -299,7 +300,18 @@
      .slick-dots li.slick-active button:before {
       opacity: 1;
       color: #62ceca;
-  }    
+  }  
+    .arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+  }
+    .arrow-right {
+      left: 103%;
+    }
+    .arrow-left {
+      right: 103%;
+    }
 }
     
 .nc-carousel-item {
