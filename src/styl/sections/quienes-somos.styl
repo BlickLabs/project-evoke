@@ -1,7 +1,7 @@
 //////////// Banner ///////////
 .quienes-somos-view__header {
   width: 100vw;
-  height: 450px;
+  height: 31.25em;
   background-image: url(../img/quienes_somos_banner.png);
   background-size: cover;
   background-position: right; 
@@ -9,6 +9,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.quienes-somos-view__header-continer {
+  width: 39.06em;
+  display: flex;
+  flex-direction: column;
+}
+
+.phrase__white {
+  color: #ffffff;
+  font-size: remify(35px);
+  letter-spacing: 1.25px;
+}
+
+.phrase__blue {
+  color: #62ceca;
+  font-size: remify(35px);
+  letter-spacing: 1.25px;
+}
+
+.quienes-somos-view__header-continer__autor {
+  margin-top: 16.3px;
+  color: #ffffff;
+  font-size: remify(19px);
+  text-align: right;
 }
 
 ///////////// Title /////////////
@@ -51,6 +76,7 @@
 .quienes-somos-view__nuestra-cultura__box2 {
   display: flex;
   justify-content: space-between;
+  margin: 0 0 121px;
 }
 
 .quienes-somos-view__nuestra-cultura-card {
@@ -233,24 +259,69 @@
   text-align: center;
 }
 
+.quienes-somos-view__clientes__carousel {
+  margin: 0 0 75px 0;
+}
+
 .clientes-carousel__container {
-  margin: 0 135px
+  margin: 0 180px
+  position: relative;
+    .draggable {
+      padding: 30px !important;
+    }
     .slick-center {
       display: flex;
       flex-direction: column;
       align-items: center;
       background-color: #29313f;
+      transform: scale(1.08);
+      transition: transform .5s ease;
     } 
 
     .slick-active {
       transition: transform 0.3s ease;
     }
-
+    .slick-dots {
+      li {
+        margin: 0 -5px 0;
+      }
+    }
     .slick-slide {
       display: flex;
       flex-direction: column;
       align-items: center;
       background-color: #29313f;  
+    }
+    .slick-dots li button:before {
+      font-family: 'slick';
+      font-size: 7px;
+      line-height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      content: '•';
+      text-align: center;
+      opacity: 1;
+      color: #d8d8d8;         
+    }
+    .slick-dots li.slick-active button:before {
+      opacity: 1;
+      color: #62ceca;
+  }  
+    .arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+  }
+    .arrow-right {
+      left: 103%;
+      padding: 0 0 0 2.18em;
+    }
+    .arrow-left {
+      right: 103%;
+      padding: 0 2.18em 0 0;
     }
 }
     
