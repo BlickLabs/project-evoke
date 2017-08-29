@@ -6,6 +6,8 @@
     slidesToScroll: 1,
     adaptiveHeight: true,
     variableWidth: true,
-    centerMode: true
+    centerMode: true,
+    prevArrow: '<img src="img/left-arrow.svg" class="arrow-left">',
+    nextArrow: '<img src="img/right-arrow.svg" class="arrow-right">',
   });
 }());
