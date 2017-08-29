@@ -1,0 +1,117 @@
+.contacto-view {
+  margin: 80px 0 130px 0;
+  padding: 0 0 0 8.25em; 
+}
+
+.contacto-view__title {
+  display: flex;
+  flex-direction: column;
+    p {
+      color: #303a4a;
+      font-size: remify(45px);
+      margin: 79px 0 0 0;
+    }
+    span {
+      color: #2d3645;
+      font-size: remify(18px);
+      line-height: 1.83;
+    }
+}
+
+.contacto-view__maincontainer {
+  margin: 100px 0 0;
+}
+
+.contacto-view__formcontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacto-view__formcontainer-box1__section1 {
+  display: flex;
+  justify-content: space-between;
+    .cw-col1, .cw-col2 {
+      input {
+        width: 14.81em;
+        border: 0;
+        border-bottom: solid 1px #f0f0f0;
+        margin: 18px 0 37px;
+        padding: 0.5em;
+        font-size: remify(12px);
+      }
+      label {
+        padding: 0 0 0 1em;
+        color: #2d3746;
+        font-size: remify(12px);
+      }
+    }
+}
+
+.contacto-view__formcontainer-box1__section2 {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0 0;
+    label {
+      padding: 0 0 0 12px;
+      color: #2d3746;
+      font-size: remify(12px);
+    }
+    textarea {
+      margin: 22px 0 0;
+      border: solid 1px #f0f0f0;
+      padding: 1em;
+      font-size: remify(12px);
+      color: #c4c4c4;
+    }
+    textarea::placeholder {
+      color: #c4c4c4;
+    }
+}
+
+.contacto-view__formcontainer-box1__section3{
+  position: relative;
+  margin: 40px 0 0 0;
+    .cw-button {
+      position: absolute;
+      color: #ffffff;
+      background-color: #fde649;
+      font-size: remify(10px);
+      text-transform: uppercase;
+      width: 106px;
+      height: 35px;
+      border-radius: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 0;
+      cursor: pointer;
+    }
+} 
+
+.contacto-view__formcontainer-box2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #2d3645;
+  width: 18.56em;
+  height: 9.87em;
+  padding: 1.87em 0 2.12em 2.12em;
+  border-radius: 3px;
+    .cw-telephone, .cw-mail {
+      display: flex;
+      align-items: center;
+      color: #fafafa;
+      font-size: remify(12px);
+        span {
+          margin: 0 0 0 10px
+        }
+    }
+    .cw-mail {
+      margin: 19px 0 0;
+    }
+    .cw-telephone2, .cw-mail2 {
+      color: #c4c4c4;
+      font-size: remify(11px);
+      margin: 7px 0 0;
+      padding: 0 0 0 27px;
+    }
+}

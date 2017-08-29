@@ -1,0 +1,66 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block title %}
+Contacto
+{% endblock %}
+
+{% block content %}
+<section class="contacto-view">
+  <div class="contacto-view__title">
+    <p class="evoke-montserrat-bold">Contacto</p>
+    <span class"evoke-montserrat-medium">Nos gustraría saber de ti</span>
+  </div>
+  <div class="contacto-view__maincontainer"> 
+    <div class="contacto-view__formcontainer">
+     {# Form and text area #}
+      <div class"contacto-view__formcontainer-box1">
+        <form action="">
+          <div class="contacto-view__formcontainer-box1__section1">
+            <div class="cw-col1">
+              <label for="nombre" class="evoke-montserrat-medium">Nombre</label>
+              <br>
+              <input type="text" id="nombre" class="evoke-montserrat-light">
+              <br>
+              <label for="e-mail" class="evoke-montserrat-medium">Correo electrónico</label>
+              <br>
+              <input type="email" id="e-mail" class="evoke-montserrat-light">
+            </div>
+            <div class="cw-col2">
+              <label for="apellido" class="evoke-montserrat-medium">Apellidos</label>
+              <br>
+              <input type="text" id="apellido" class="evoke-montserrat-light">
+              <br>
+              <label for="empresa" class="evoke-montserrat-medium">Compañia / Organización</label>
+              <br>
+              <input type="text" id="empresa" class="evoke-montserrat-light">
+            </div>
+          </div>
+          <div class="contacto-view__formcontainer-box1__section2">
+            <label for="mensaje" class="evoke-montserrat-medium">Mensaje</label>
+            <textarea name="" id="mensaje" cols="90" rows="15" placeholder="Escribe aquí..." class="evoke-gandhisans-regular"></textarea>
+          </div>
+        </form>
+        <div class="contacto-view__formcontainer-box1__section3">
+          <span class="evoke-montserrat-medium cw-button">Enviar</span>
+        </div>  
+      </div>
+      {# Contact #}
+      <div class="contacto-view__formcontainer-box2">
+        <div class="cw-telephone">
+          <img src="img/phone.svg" alt="phone" width="18" height="12">
+          <span class="evoke-montserrat-medium">Márcanos</span>
+        </div>
+        <span class="cw-telephone2 evoke-gandhisans-regular">(55) 63 58 10 62</span>
+        <div class="cw-mail">
+          <img src="img/mail.svg" alt="mail" width="16" height="11">
+          <span class="evoke-montserrat-medium">Escríbenos</span>
+        </div>
+        <span class="cw-mail2 evoke-gandhisans-regular">contacto@evokemygenius.com</span>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
