@@ -259,14 +259,23 @@
   text-align: center;
 }
 
+.quienes-somos-view__clientes__carousel {
+  margin: 0 0 75px 0;
+}
+
 .clientes-carousel__container {
-  margin: 0 135px
+  margin: 0 180px
   position: relative;
+    .draggable {
+      padding: 30px !important;
+    }
     .slick-center {
       display: flex;
       flex-direction: column;
       align-items: center;
       background-color: #29313f;
+      transform: scale(1.08);
+      transition: transform .5s ease;
     } 
 
     .slick-active {
@@ -297,7 +306,7 @@
       opacity: 1;
       color: #d8d8d8;         
     }
-     .slick-dots li.slick-active button:before {
+    .slick-dots li.slick-active button:before {
       opacity: 1;
       color: #62ceca;
   }  
@@ -308,9 +317,11 @@
   }
     .arrow-right {
       left: 103%;
+      padding: 0 0 0 2.18em;
     }
     .arrow-left {
       right: 103%;
+      padding: 0 2.18em 0 0;
     }
 }
     
