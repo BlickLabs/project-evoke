@@ -65,6 +65,7 @@
   align-items: center;
   justify-content: space-between;
   height: 331px;
+  position: relative;
 }
 
 .eg-rectangle1 {
@@ -76,11 +77,12 @@
   background-image: url(../img/rectangle_evoke.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 57%;
   height: 285px;
 }
 
 .eg-rectangle2 {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,11 +91,12 @@
   background-image: url(../img/rectangle_genius.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 55%;
   height: 285px;
+  right: 0;
 }
 
-.eg-rectangle__container {
+.eg-rectangle__container1, .eg-rectangle__container2 {
   width: 240px;
     .eg-rectangle__title {
       display: flex;
@@ -127,8 +130,17 @@
     }
 }
 
+.eg-rectangle__container1 {
+  margin: 0 3.75em 0 0;
+}
+
+.eg-rectangle__container2  {
+  margin: 0 0 0 7.5em;
+}
+
 //////////// Nuestra Cultura //////////
 .quienes-somos-view__nuestra-cultura {
+  margin: 111px 0 0 0;
   max-width: 900px;
   center-block();
   display: flex;
