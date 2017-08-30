@@ -12,25 +12,68 @@
 }
 
 .quienes-somos-view__header-continer {
-  width: 39.06em;
+  width: 43em;
   display: flex;
   flex-direction: column;
 }
 
+// White letters
 .phrase__white {
   color: #ffffff;
-  font-size: remify(35px);
   letter-spacing: 1.25px;
 }
 
+.phrase__white1 {
+  font-size: remify(43px);
+}
+
+.phrase__white2 {
+  font-size: remify(43px);
+}
+
+.phrase__white3 {
+  font-size: remify(35px);
+}
+
+.phrase__white4 {
+  font-size: remify(40px);
+}
+
+.phrase__white5 {
+  font-size: remify(28px);
+}
+
+.phrase__white6 {
+  font-size: remify(25px);
+}
+// Blue letters
 .phrase__blue {
   color: #62ceca;
-  font-size: remify(35px);
   letter-spacing: 1.25px;
+}
+
+.phrase__blue1 {
+  font-size: remify(43px);
+}
+
+.phrase__blue2 {
+  font-size: remify(35px);
+}
+
+.phrase__blue3 {
+  font-size: remify(34px);
+}
+
+.phrase__blue4 {
+   font-size: remify(40px);
+}
+
+.phrase__blue5 {
+  font-size: remify(28px);
 }
 
 .quienes-somos-view__header-continer__autor {
-  margin-top: 16.3px;
+  margin: 17px 17px 0 0;
   color: #ffffff;
   font-size: remify(19px);
   text-align: right;
@@ -59,8 +102,88 @@
     }
 }
 
+//////////// Evoke Genius ////////////
+.quienes-somos__evoke-genius {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 331px;
+  position: relative;
+}
+
+.eg-rectangle1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-end;
+  align-items: center;
+  background-image: url(../img/rectangle_evoke.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 57%;
+  height: 285px;
+}
+
+.eg-rectangle2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+  align-items: center;
+  background-image: url(../img/rectangle_genius.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 55%;
+  height: 285px;
+  right: 0;
+}
+
+.eg-rectangle__container1, .eg-rectangle__container2 {
+  width: 240px;
+    .eg-rectangle__title {
+      display: flex;
+      font-size: remify(30px);
+        p:nth-child(1) {
+          color: #ffffff;
+        }
+        p:nth-child(2) {
+          color: #62ceca;
+          padding-left: 10px;
+        }
+    }
+    .eg-rectangle__ruler {
+      border-top: solid 1px #ebebeb;
+      margin: 15px 0 12px;
+    }
+    .eg-rectangle__subtitle {
+      display: flex;
+      flex-direction: column;
+        span:nth-child(1) {
+          color: #ffffff;
+          font-size: remify(16px);
+          line-height: 1.25;
+        }
+        span:nth-child(2) {
+          color: #62ceca;
+          font-size: remify(13px);
+          text-align: right;
+          margin-top: 15px;
+        } 
+    }
+}
+
+.eg-rectangle__container1 {
+  margin: 0 3.75em 0 0;
+}
+
+.eg-rectangle__container2  {
+  margin: 0 0 0 7.5em;
+}
+
 //////////// Nuestra Cultura //////////
 .quienes-somos-view__nuestra-cultura {
+  margin: 111px 0 0 0;
   max-width: 900px;
   center-block();
   display: flex;
@@ -267,15 +390,15 @@
   margin: 0 180px
   position: relative;
     .draggable {
-      padding: 30px !important;
+      padding: 45px !important;
     }
     .slick-center {
       display: flex;
       flex-direction: column;
       align-items: center;
       background-color: #29313f;
-      transform: scale(1.08);
-      transition: transform .5s ease;
+      transform: scale(1.35);
+      transition: transform .3s ease;
     } 
 
     .slick-active {
@@ -328,27 +451,31 @@
 .nc-carousel-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 500px;
-  height: 300px;
-  padding: 80px 50px;
+  justify-content: center;
+  width: 377px;
+  height: 222px;
+  padding: 0 40px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
   outline: none;
     .nc-city {
       color: #dcdcdc;
       font-size: remify(10px);
+      margin-bottom: 10px;
     }  
     .nc-name {
       color: #62ceca;
       font-size: remify(12px);
+      margin-bottom: 14px;
     }
     .nc-ruler {
       border-top: solid 1px #bdbdbd;
-      width: 75.59%;
+      width: 285px;
+      margin-bottom: 20px;
     }
     .nc-testimonial {
       color: #ffffff;
-      font-size: remify(12px);
+      font-size: remify(11px);
       line-height: 1.33;
       text-align: center;
     }
