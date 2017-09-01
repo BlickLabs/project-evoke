@@ -1,7 +1,7 @@
 (function () {
   $('.workshops-carousel__container').slick({
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     variableWidth: true,
     centerMode: true,
