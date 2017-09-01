@@ -95,6 +95,7 @@
   height: 502px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
   outline: none;
+  position: relative;
 }
 
 .ws-carousel-item__box1 {
@@ -113,7 +114,6 @@
 .ws__box1-title {
   display: flex;
   font-size: remify(21px);
-  z-index: 1;
     p {
       color: #ffffff;
     }
@@ -129,7 +129,6 @@
   display: flex;
   margin: 15px 0 0;
   font-size: remify(13px);
-  z-index: 1;
     span {
       padding: 0 0 0 5px;
     }
@@ -141,6 +140,8 @@
   opacity: 0.92;
   width: 100%;
   height: 100%;
+  left: 0;
+  top: 0;
 }
 
 .ws-carousel-item__box2 {
@@ -169,6 +170,16 @@
     }
 }
 
+.ws-carousel-item__mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #3a4351;
+  opacity: 0.85;
+}
+
 .workshops-carousel__container {
   max-width: 850px;
   position: relative
@@ -177,14 +188,31 @@
       padding: 50px !important;
     }
 
-     .slick-center {
+    .slick-center {
       transform: scale(1.10);
       transition: transform .3s ease;
-     }
+        .ws-carousel-item__mask {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #3a4351;
+          opacity: 0;
+        }
+        .ws__box1-title, .ws__box1-subtitle {
+          z-index: 1;
+        }
+    }
 
-     .slick-active {
-       transition: transform .3s ease;
-     }
+    .slick-active {
+      transition: transform .3s ease;
+      
+    }
+
+    .slick-slide {
+      ransition: transform .3s ease;
+    }
     // Arrows 
     .arrow-left, .arrow-right {
       position: absolute;
