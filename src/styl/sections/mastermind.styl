@@ -168,3 +168,51 @@
   color: #2d3645
   font-size: remify(13px);
 }
+
+////////// Creación e implementación //////////
+.mastermind-view__creacion {
+  background-color: #2d3645;
+}
+
+.mastermind-view__creacion-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ci-box1 {
+  background-image: url(../img/mastermind_classroom.png)
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 21.43em;
+  height: 27.81em;
+}
+
+.ci-box2 {
+  display: flex;
+  flex-direction: column;
+    .ci-box2__title {
+      display: flex;
+      align-items: center;
+        p {
+          color: #ffffff;
+          font-size: remify(37px);
+          margin: 0 0 0 16px;
+        }
+    }
+    .ci-box2__ruler {
+      border-top: solid 1px #e9e9e9;
+      margin: 18px 0;
+      width: 105%;
+    }
+    .ci-box2__subtitle {
+      p {
+        color: #ffffff;
+        font-size: remify(15px);
+        line-height: 1.47;
+        width: 575px;
+        text-align: justify;
+      }
+    }
+}
