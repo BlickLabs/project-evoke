@@ -37,7 +37,15 @@
   display: flex;
   flex-direction: column;
   width: 325px;
-  // margin: 66px 0 200px 0;
+    p {
+      line-height: 1.47;
+    }
+    .ce-box__title {
+      line-height: 1.47;
+        span:nth-child(2) {
+          color: #a2e12d;
+        }
+    }
     .ce-box__ruler {
       border-top: solid 1px #a2e12d;
       width: 302px;
@@ -115,5 +123,150 @@
     }
     img {
       margin: 60px 0 0;
+    }
+}
+
+//////// Preguntas a considerar ///////
+.coaching-ejecutivo__questions {
+  display: flex;
+  align-items: center;
+  margin: 118px 0 0;
+  background-color: #2d3645;
+}
+
+.coaching-ejecutivo__questions-img {
+  background-image: url(../img/chairs_coaching-ejecutivo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 377px;
+  height: 387px;
+}
+
+.coaching-ejecutivo__questions-content {
+  display: flex;
+  flex-direction: column;
+  center-block();
+    .coaching-ejecutivo__questions-content__title {
+      color: #ffffff;
+      font-size: remify(26px);
+      width: 471px;
+      line-height: 1.46;
+    }
+}
+
+.ce-mainbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.ce-box1, .ce-box2 {
+  display: flex;
+    p {
+      color: #ffffff;
+      font-size: remify(19px);
+      width: 24.68em;
+      line-height: 1.26;
+      margin: 0 0 0 22px;
+    }
+    .ce-hex__green {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../img/hex_green.svg)
+      width: 37.8px;
+      height: 34.2px;
+      color: #2d3645;
+      font-size: remify(15px);
+    }
+}
+
+.ce-box1 {
+  margin: 34px 0; 
+}
+
+///////// Programa Standar de Coaching ///////
+.coaching-ejecutivo__program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coaching-ejecutivo__program-title {
+  color: #2d3645;
+  font-size: remify(30px);
+  margin: 80px 0 45px;
+}
+
+.coaching-ejecutivo__program-container {
+  display: flex;
+  margin: 0 0 88px 0;
+  width: 41.25em;
+  background-color: #29313f;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  padding: 23px 20px 23px 41px;
+}
+
+.coaching-ejecutivo__program-box1 {
+  ul {
+    color: #ffffff;
+    font-size: remify(15px);
+  }
+  li {
+    width: 209px;
+    display: flex;
+    line-height: 1.47;
+  }
+  li:nth-child(2) {
+    margin: 35px 0 0;
+  }
+  img {
+    margin: 5px 7px 0 0;
+    align-self: flex-start;
+  }
+}
+
+.coaching-ejecutivo__program-box2 {
+  border-right: solid 1px #f3f3f3;
+  height: 17.06em;
+  margin: 0 27px 0;
+}
+
+.coaching-ejecutivo__program-box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+    .ce-box3-title {
+      color: #a2e12d;
+      font-size: remify(15px);
+      margin: 0 0 7px 0;
+    }
+    .ce-box3-subtitle {
+      color: #ffffff;
+      font-size: remify(15px);  
+    }
+    .ce-box3-subtitle2 {
+      color: #e3e3e3;
+      font-size: remify(11px);
+      margin: 0 0 0 12px;
+    }
+    .ce-box3-shape {
+      color: #a2e12d;
+      font-size: remify(15px);
+    }
+}
+
+.ce-box3__duracion {
+  width: 13.06em;
+}
+
+.ce-box3__icf {
+  display: flex;
+  justify-content: center;
+  width: 15em;
+  line-height: 1.47;
+    span {
+      color: #a2e12d;
+      margin: 0 5px 0 0;
     }
 }
