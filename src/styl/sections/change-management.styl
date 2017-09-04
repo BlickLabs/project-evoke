@@ -20,18 +20,36 @@
     .change-management-view__main-title {
       color: #2d3645;
       font-size: remify(30px);
-      margin: 0 0 15px;
+      margin: 0 0 0 10px;
     }
-    span {
+    .change-management-view__main-servicios {
       color: #cecece;
-      font-size: remify(23px);
-      margin: 0 0 20px;
+      font-size: remify(23px); 
+      margin: 15px 0;
     }
     .change-management-view__main-subtitle {
       color: #2d3746;
       font-size: remify(15px);
       text-align: center;
       line-height: 1.47
+    }
+}
+
+.cm-container {
+  display: flex;
+  align-items: center;
+    .cm-hex {
+      display: flex;
+      justify-content: center;  
+      align-items: center;
+      background-image: url(../img/servicios_hex.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 40px;
+      height: 40px;
+        img {
+          margin: 0 0 3px 0;
+        }
     }
 }
 
