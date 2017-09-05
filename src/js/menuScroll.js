@@ -1,13 +1,8 @@
 var last_known_scroll_position = 0;
 var ticking = false;
 
-var siteNavbarLogo = document.querySelector('.site-navbar__desktop-logo-container img');
-var siteNavbar = document.querySelector('.site-navbar');
 var siteNavbarMenuLink = $('.site-navbar__menu-link');
 var siteNavbarActive = document.querySelector('.active');
-var siteLang = document.querySelector('.lang-div');
-var siteArrow = document.querySelector('.lang-arrow');
-
 // navbar-fixed-top
 function doSomething(scroll_pos) {
     if (scroll_pos > 1) {
