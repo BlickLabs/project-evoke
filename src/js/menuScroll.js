@@ -1,9 +1,9 @@
 var last_known_scroll_position = 0;
 var ticking = false;
 
-var siteNavbarMenuLink = $('.site-navbar__menu-link');
-var siteNavbarActive = document.querySelector('.active');
+var siteNavbar = document.querySelector('.site-navbar');
 // navbar-fixed-top
+
 function doSomething(scroll_pos) {
     if (scroll_pos > 1) {
         siteNavbar.classList.add('nav-standar-bg');
@@ -14,7 +14,7 @@ function doSomething(scroll_pos) {
         }
     } else {
         siteNavbar.classList.add('nav-transparent-bg');
-        siteNavbar.classList.remove('nav-standar-bg') ; 
+        siteNavbar.classList.remove('nav-standar-bg');
     }
 }
 
