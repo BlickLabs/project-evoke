@@ -182,7 +182,7 @@
 //////////// Nuestra Cultura //////////
 .quienes-somos-view__nuestra-cultura {
   margin: 111px 0 0 0;
-  max-width: 900px;
+  max-width: 1080px;
   center-block();
   display: flex;
   flex-direction: column;
@@ -196,91 +196,89 @@
 
 .quienes-somos-view__nuestra-cultura__box2 {
   display: flex;
-  justify-content: space-between;
-  margin: 0 0 121px;
+  justify-content: space-around;
+  padding: 0 10em 0;
+  margin: 0 0 60px 0;
 }
 
 .quienes-somos-view__nuestra-cultura-card {
   display: flex;
   flex-direction: column;
     
-    .nc-hex {
-      background-image: url(../img/servicios_hex.svg);
-      background-size: cover;
-      width: 80.2px;
-      height: 72.7px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .nc-title {
-      color: #2d3746;
-      text-transform: uppercase;
-      margin: 13px 0 0;
-      font-size: remify(15px); 
-    }
-
     .nc-subtitle {
       color: #2d3746;
       font-size: remify(12px);
       line-height: 1.25;
       margin: 13px 0 0;
+      text-align: center;
     }
 }
 
+.nc-title {
+  color: #2d3746;
+  text-transform: uppercase;
+  margin: 13px 0 13px 0;
+  font-size: remify(15px); 
+}
+
+.nc-hex {
+  background-image: url(../img/servicios_hex.svg);
+  background-size: cover;
+  width: 80.2px;
+  height: 72.7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nc-card1 {
-  width: 176px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 219px;
 }
 
 .nc-card2 {
-  width: 184px;
-}
-
-.nc-card3 {
-  width: 403px
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 219px;
 }
 
 .nc-hex__rule {
   border-top: solid 1px #eaeaea;
   width: 100%;
-  margin: 17.7px 0 0 
 }
 
-.nc-card3__subbox {
+.quienes-somos-view__nuestra-cultura__box3 {
   display: flex;
-  flex-direction: row;
-}
-
-.subbox-1 {
-
-  p {
-    color: #2d3746;
-    font-size: remify(12px);
-    margin: 15px 0 10px;
-    line-height: 0;
-  }
-
-  span{
-    color: #2d3746;
-    font-size: remify(12px);
-  } 
-}
-
-.subbox-2 {
-  margin: 0 0 0 20px;
-  
-  p {
-    color: #2d3746;
-    font-size: remify(12px);
-    margin: 15px 0 10px;
-    line-height: 0;
-  }
-
-  span{
-    color: #2d3746;
-    font-size: remify(12px);
-  } 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0 120px 0;
+    .box3-subcontainer {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin: 13px 0 0;
+        .box3-subcontainer__content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 197px;
+            p {
+              color: #2d3746;
+              font-size: remify(14px);
+            }
+            span {
+              color: #2d3746;
+              font-size: remify(12px);
+              text-align: center;
+              margin: 7px 0 0;
+            }
+        }
+    }
 }
 
 ////////// Nuestro Equipo ///////
