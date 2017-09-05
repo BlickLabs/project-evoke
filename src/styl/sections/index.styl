@@ -27,11 +27,50 @@ a {
 .carousel-1 {
   position: relative;
   max-width: 100%;
-}
+    // Slick Carousel
+    .slick-slide {
+       max-width: 100%;
+       min-height: 100vh;
+  }
 
-.slick-slide {
-  max-width: 100%;
-  min-height: 100vh;
+    .slick-dots {
+      position: absolute;
+      bottom: 4%;
+      left: 45%;
+      display: block;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-align: center;
+        li {
+          margin: 0 -3px 0 
+      }
+  }
+
+    .slick-dots li button:before {
+      font-family: 'slick';
+      font-size: 10px;
+      line-height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      content: '•';
+      text-align: center;
+      opacity: 1;
+      color: #e14b45;
+  }
+
+     .slick-dots li.slick-active button:before {
+       opacity: 1;
+      color: #d8d8d8;
+  }
+
+      .slick-dotted.slick-slider {
+        margin-bottom: 0;
+  }
 }
 
 .section-carousel-1__bg {
@@ -64,9 +103,9 @@ a {
 }
 
 .index-ruler {
-   border: solid 1px #f3f3f4;
+   border-top: solid 1px #f3f3f4;
    width: 14.43em;
-   position: absolute;
+   margin: 10px 0 0 240px;
    left: 50%;
 }
 
@@ -101,7 +140,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  bottom: 0
+  bottom: 0;
+  right: 50%;
     .circle {
       width: 5px;
       height: 5px;
@@ -198,6 +238,10 @@ a {
   cursor: pointer;
 }
 
+.hex1:hover {
+  background-image: url(../img/hoover_hex.svg)
+}
+
 .servicios__card-hr {
   border-top: solid 1px #eaeaea;
   width: 100%;
@@ -248,7 +292,7 @@ a {
   margin-top: 45px;
 }
 
-.blog-box2__img {
+ .blog-box2__img {
   position: relative;
 }
 
@@ -256,14 +300,16 @@ a {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #fc4e44;
+  background-image: url(../img/blog_hover.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 100%;
   height: calc(100% - 4px);
   opacity: 0;
   transition: 0.5s;
 }
 
-.blog-box2__mask:hover {
+.blog-box1__mask, .blog-box2__mask:hover {
   position: absolute;
   left: 0;
   top: 0;
@@ -287,7 +333,7 @@ a {
     color: #2d3746;
     font-size: remify(17px);
   }
-  hr {
+  .blog-ruler {
     width: 24px;
     border-top: #fc4e44 solid 1px;
     margin: 12.3px 0 12.3px;
@@ -331,7 +377,7 @@ a {
 
 .index-cultura__ruler {
   border-top: solid 1px #2d3746;
-  width: 56.09%;
+  width: 54.75em;
 }
 
 .cultura-box1 {
@@ -339,23 +385,23 @@ a {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 0 10.56em 0;
+  padding: 0 21.56em 0;
 }
 
 .cultura-box1__card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 187px;
+  width: 219px;
     .cultura-box1__card-title {
       font-size: remify(15px);
       color: #2d3746;
       text-transform: uppercase;
     }
-    hr {
-      width: 72.72%;
-      border: solid 1px #eaeaea;
-      margin: 10px 0 10px;
+    .box1-ruler {
+      width: 100%;
+      border-top: solid 1px #eaeaea;
+      margin: 13px 0 13px;
     }
     .cultura-box1__card-paragraph {
       font-size: remify(11px);
@@ -377,46 +423,55 @@ a {
   margin: 0 0 32px;
 }
 
-.cultura-button {
-  margin: 67px 0 88px;
+.cultura-box2 {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0 80px 0;
+  width: 1080px;
 }
-// Slick Carousel
 
-.slick-dots {
-  position: absolute;
-  bottom: 4%;
-  left: 45%;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-    li {
-      margin: 0 -3px 0 
+.cultura-box2__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    .cultura-box2__card-title {
+      font-size: remify(15px);
+      color: #2d3746;
+      text-transform: uppercase;
     }
 }
-
-.slick-dots li button:before {
-  font-family: 'slick';
-  font-size: 10px;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  content: '•';
-  text-align: center;
-  opacity: 1;
-  color: #e14b45;
+.box2-ruler {
+  width: 100%;
+  border-top: solid 1px #eaeaea;
+  margin: 30px 0 43px 0     
 }
 
-.slick-dots li.slick-active button:before {
-  opacity: 1;
-  color: #d8d8d8;
+.cultura-box2__content {
+  display: flex;
+  justify-content: space-around;
+    .cultura-box2__subcontent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 197px;
+        p {
+          color: #2d3746;
+          font-size: remify(13px);
+        }
+        span {
+          color: #2d3746;
+          font-size: remify(11px);
+          text-align: center;
+          line-height: 1.36;
+          margin: 7px 0 0;
+        }
+    }
+}  
+
+.cultura-button {
+  margin: 0 0 62px 0;
 }
 
-.slick-dotted.slick-slider {
-  margin-bottom: 0;
+.typed-cursor {
+  display: none;
 }

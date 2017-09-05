@@ -1,0 +1,480 @@
+//////////// Banner ///////////
+.quienes-somos-view__header {
+  width: 100vw;
+  height: 31.25em;
+  background-image: url(../img/quienes_somos_banner.png);
+  background-size: cover;
+  background-position: right; 
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quienes-somos-view__header-continer {
+  width: 43em;
+  display: flex;
+  flex-direction: column;
+}
+
+// White letters
+.phrase__white {
+  color: #ffffff;
+  letter-spacing: 1.25px;
+}
+
+.phrase__white1 {
+  font-size: remify(43px);
+}
+
+.phrase__white2 {
+  font-size: remify(43px);
+}
+
+.phrase__white3 {
+  font-size: remify(35px);
+}
+
+.phrase__white4 {
+  font-size: remify(40px);
+}
+
+.phrase__white5 {
+  font-size: remify(28px);
+}
+
+.phrase__white6 {
+  font-size: remify(25px);
+}
+// Blue letters
+.phrase__blue {
+  color: #62ceca;
+  letter-spacing: 1.25px;
+}
+
+.phrase__blue1 {
+  font-size: remify(43px);
+}
+
+.phrase__blue2 {
+  font-size: remify(35px);
+}
+
+.phrase__blue3 {
+  font-size: remify(34px);
+}
+
+.phrase__blue4 {
+   font-size: remify(40px);
+}
+
+.phrase__blue5 {
+  font-size: remify(28px);
+}
+
+.quienes-somos-view__header-continer__autor {
+  margin: 17px 17px 0 0;
+  color: #ffffff;
+  font-size: remify(19px);
+  text-align: right;
+}
+
+///////////// Title /////////////
+.quienes-somos-view__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+    p {
+      font-size: remify(45px);
+      color: #28303f;
+      margin: 81px 0 45px;
+    }
+
+    span {
+      font-size: remify(15px);
+      color: #2d3746;
+      line-height: 1.47;
+      max-width: 700px;
+      text-align: center;
+      margin: 0 0 88px;
+    }
+}
+
+//////////// Evoke Genius ////////////
+.quienes-somos__evoke-genius {
+  display: flex;
+  height: 331px;
+  position: relative;
+}
+
+.eg-rectangle1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-end;
+  align-items: center;
+  background-image: url(../img/rectangle_evoke.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 57%;
+  height: 285px;
+}
+
+.eg-rectangle2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+  align-items: center;
+  background-image: url(../img/rectangle_genius.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 55%;
+  height: 285px;
+  right: 0;
+}
+
+.eg-rectangle__container1, .eg-rectangle__container2 {
+  width: 240px;
+    .eg-rectangle__title {
+      display: flex;
+      font-size: remify(30px);
+        p:nth-child(1) {
+          color: #ffffff;
+        }
+        p:nth-child(2) {
+          color: #62ceca;
+          padding-left: 10px;
+        }
+    }
+    .eg-rectangle__ruler {
+      border-top: solid 1px #ebebeb;
+      margin: 15px 0 12px;
+    }
+    .eg-rectangle__subtitle {
+      display: flex;
+      flex-direction: column;
+        span:nth-child(1) {
+          color: #ffffff;
+          font-size: remify(16px);
+          line-height: 1.25;
+        }
+        span:nth-child(2) {
+          color: #62ceca;
+          font-size: remify(13px);
+          text-align: right;
+          margin-top: 15px;
+        } 
+    }
+}
+
+.eg-rectangle__container1 {
+  margin: 0 3.75em 0 0;
+}
+
+.eg-rectangle__container2  {
+  margin: 0 0 0 7.5em;
+}
+
+//////////// Nuestra Cultura //////////
+.quienes-somos-view__nuestra-cultura {
+  margin: 111px 0 0 0;
+  max-width: 900px;
+  center-block();
+  display: flex;
+  flex-direction: column;
+    .quienes-somos-view__nuestra-cultura__box1 {
+      color: #2d3746;
+      font-size: remify(30px);
+      letter-spacing: 0.4px;
+      margin: 0 0 64px;
+    }
+}
+
+.quienes-somos-view__nuestra-cultura__box2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 121px;
+}
+
+.quienes-somos-view__nuestra-cultura-card {
+  display: flex;
+  flex-direction: column;
+    
+    .nc-hex {
+      background-image: url(../img/servicios_hex.svg);
+      background-size: cover;
+      width: 80.2px;
+      height: 72.7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nc-title {
+      color: #2d3746;
+      text-transform: uppercase;
+      margin: 13px 0 0;
+      font-size: remify(15px); 
+    }
+
+    .nc-subtitle {
+      color: #2d3746;
+      font-size: remify(12px);
+      line-height: 1.25;
+      margin: 13px 0 0;
+    }
+}
+
+.nc-card1 {
+  width: 176px;
+}
+
+.nc-card2 {
+  width: 184px;
+}
+
+.nc-card3 {
+  width: 403px
+}
+
+.nc-hex__rule {
+  border-top: solid 1px #eaeaea;
+  width: 100%;
+  margin: 17.7px 0 0 
+}
+
+.nc-card3__subbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.subbox-1 {
+
+  p {
+    color: #2d3746;
+    font-size: remify(12px);
+    margin: 15px 0 10px;
+    line-height: 0;
+  }
+
+  span{
+    color: #2d3746;
+    font-size: remify(12px);
+  } 
+}
+
+.subbox-2 {
+  margin: 0 0 0 20px;
+  
+  p {
+    color: #2d3746;
+    font-size: remify(12px);
+    margin: 15px 0 10px;
+    line-height: 0;
+  }
+
+  span{
+    color: #2d3746;
+    font-size: remify(12px);
+  } 
+}
+
+////////// Nuestro Equipo ///////
+.quienes-somos-view__nuestro-equipo {
+  background-color: #29313f;
+  padding: 73px 0 98px;
+}
+
+.quienes-somos-view__nuestro-equipo__title {
+  color: #ffffff;
+  font-size: remify(30px);
+  text-align: center;
+  margin: 0 0 67px;
+}
+
+.quienes-somos-view__nuestro-equipo__container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 180px 0;
+}
+
+.quienes-somos-view__nuestro-equipo-box1 {
+  width: 245px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  center-block();
+
+    .ne-profileimg {
+      position: relative;
+
+        .ne-socialmedia {
+          background-color: #62ceca;
+          width: 42px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          position: absolute;
+          right: 8%;
+          top: 0;
+          padding: 0 3.7px 0;
+            
+            span {
+              cursor: pointer;
+            }
+        }
+    }
+    
+    .ne-name {
+      color: #ffffff;
+      font-size: remify(20px);
+      margin: 21px 0 0;
+    }
+    .ne-title {
+      color: #dcdcdc;
+      font-size: remify(12px);
+      margin: 10px 0 0;
+    }
+    .ne-ruler {
+      border-top: solid 1px #62ceca;
+      margin: 10px 0 ;
+      width: 80%;
+    }
+    .ne-content {
+      color: #ffffff;
+      font-size: remify(12px);
+      text-align: center;
+      line-height: 1.33;
+    }
+    .ne-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 105px;
+      height: 35px;
+      border-radius: 28px;
+      color: #ffffff;
+      background-color: #62ceca;
+      font-size: remify(10px);
+      text-transform: uppercase;
+      margin: 27px 0 0;
+      cursor: pointer;
+    }
+}
+
+.quienes-somos-view__nuestro-equipo-box2 {
+   border-right: solid 1px #eaeaea;
+   height: 17.12em;
+}
+
+//////// Lo que nuestros clientes dicen ///////
+.quienes-somos-view__clientes__title {
+  margin: 40px 0 57px;
+  color: #313b4b;
+  font-size: remify(30px);
+  text-align: center;
+}
+
+.quienes-somos-view__clientes__carousel {
+  margin: 0 0 75px 0;
+}
+
+.clientes-carousel__container {
+  margin: 0 180px
+  position: relative;
+    .draggable {
+      padding: 45px !important;
+    }
+    .slick-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #29313f;
+      transform: scale(1.35);
+      transition: transform .3s ease;
+    } 
+
+    .slick-active {
+      transition: transform 0.3s ease;
+    }
+    .slick-dots {
+      li {
+        margin: 0 -5px 0;
+      }
+    }
+    .slick-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #29313f;  
+    }
+    .slick-dots li button:before {
+      font-family: 'slick';
+      font-size: 7px;
+      line-height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      content: '•';
+      text-align: center;
+      opacity: 1;
+      color: #d8d8d8;         
+    }
+    .slick-dots li.slick-active button:before {
+      opacity: 1;
+      color: #62ceca;
+  }  
+    .arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+  }
+    .arrow-right {
+      left: 103%;
+      padding: 0 0 0 2.18em;
+    }
+    .arrow-left {
+      right: 103%;
+      padding: 0 2.18em 0 0;
+    }
+}
+    
+.nc-carousel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 377px;
+  height: 222px;
+  padding: 0 40px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  outline: none;
+    .nc-city {
+      color: #dcdcdc;
+      font-size: remify(10px);
+      margin-bottom: 10px;
+    }  
+    .nc-name {
+      color: #62ceca;
+      font-size: remify(12px);
+      margin-bottom: 14px;
+    }
+    .nc-ruler {
+      border-top: solid 1px #bdbdbd;
+      width: 285px;
+      margin-bottom: 20px;
+    }
+    .nc-testimonial {
+      color: #ffffff;
+      font-size: remify(11px);
+      line-height: 1.33;
+      text-align: center;
+    }
+}

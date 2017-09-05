@@ -13,23 +13,13 @@ function doSomething(scroll_pos) {
     if (scroll_pos > 1) {
         siteNavbar.classList.add('nav-standar-bg');
         siteNavbar.classList.remove('nav-transparent-bg');
-    } else if (window.location.pathname === '/servicios.html') {
+    } else if (window.location.pathname === '/project-evoke/recursos.html' || '/project-evoke/contacto.html') {
         if (scroll_pos >= 0) {
             siteNavbar.classList.add('nav-standar-bg');
-            siteNavbar.classList.remove('nav-transparent-bg');
-            siteNavbarActive.classList.add('active-green');
-            siteLang.classList.add('lang-div-green');
-            siteArrow.classList.add('lang-arrow-green');
-            siteNavbarMenuLink.each(function (index, value) {
-                if (!$(value).hasClass('active-green')) {     
-                    $(value).addClass('site-navbar__menu-link__green')
-                }
-            });
-            siteNavbarLogo.setAttribute('src', 'img/evoke_verde_logo.png');
         }
     } else {
         siteNavbar.classList.add('nav-transparent-bg');
-        siteNavbar.classList.remove('nav-standar-bg');  
+        siteNavbar.classList.remove('nav-standar-bg') ; 
     }
 }
 

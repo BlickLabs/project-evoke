@@ -2,7 +2,7 @@
   display flex
   flex-wrap wrap
   align-items center
-  height 82px // Change
+  height 103px // Change
   left 0
   position fixed
   top 0
@@ -38,33 +38,24 @@
 .site-navbar__menu-link
   color #ffffff // Change
   font-size remify(12px) // Change
-  margin-right: 15px
+  margin-right: 14px
   display flex
   align-items center
   justify-content center 
 
-// hover colors
-
-.site-navbar__menu-link__red:hover
-  color #fc4e44 // Change
-
-.site-navbar__menu-link__green:hover
-   color #a2e12d // Change
+.site-navbar__menu-link:hover
+    color #cccccc// Change
 
   &.active
-    color #ffffff
-    background-color #fc4e44
+    color #ffffff // Change
+    background-color #cccccc
     width 94px
     height 30px
     border-radius 100px
 
-   &.active-green
-    color #ffffff // Change
-    background-color #a2e12d
-    width 94px
-    height 30px
-    border-radius 100px
-      
+  &.active:hover
+    color: #ffffff;
+
 @media screen and (max-width: 876px) // Change
   .site-navbar
     justify-content space-between
@@ -137,7 +128,7 @@
 .lang-div
   height 19px
   width 2px
-  background-color #fc4e44
+  background-color #cccccc
   margin 10px 10px 9px
 
 .lang-div-green
@@ -152,8 +143,16 @@
   width 0
   height 0
   border-style solid
+<<<<<<< HEAD
   border-width 3.8px 1.9px 0 1.9px
   border-color #fc4e44 transparent transparent transparent
 
 .lang-arrow-green
   border-color #a2e12d transparent transparent transparent
+||||||| merged common ancestors
+  border-width 3.8px 1.9px 0 1.9px
+  border-color #fc4e44 transparent transparent transparent
+=======
+  border-width: 6px 3px 0 3px
+  border-color #cccccc transparent transparent transparent
+>>>>>>> dev

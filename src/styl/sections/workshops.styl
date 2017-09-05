@@ -1,0 +1,229 @@
+////////// Workshops servicios ///////////
+.workshops-view__main {
+  margin: 103px 0 0;
+  display: flex;
+  max-width: 1280px;
+  center-block();
+  justify-content: space-between;
+}
+
+.workshops-view__box1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 385px;
+  margin: 0 0 0 150px;
+    .workshops-view__box1-title {
+      color: #2d3645;
+      font-size: remify(30px);
+      margin: 45px 0 0;
+    }
+    span {
+      color: #cecece;
+      font-size: remify(23px);
+      margin: 10px 0 0;
+    }
+    .workshops-view__box1-subtitle {
+      color: #2d3746;
+      font-size: remify(15px);
+      margin: 10px 0 0;
+      line-height: 1.47;
+    }
+}
+
+////////// ¿En qué se basan? /////////
+.workshops-view__sec1 {
+  background-color: #2d3645;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -5px 0 0;
+    p {
+      color: #ffffff;
+      font-size: remify(30px);
+      margin: 106px 0 30px;
+    }
+    span {
+      color: #ffffff;
+      font-size: remify(15px);
+      line-height: 1.47;
+      width: 46.87em;
+      text-align: center;
+      margin: 0 0 79px;
+    }
+}
+//////////// Qué esperar de los workshops //////////
+.workshops-view__sec2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    p {
+      color: #2d3645;
+      font-size: remify(30px);
+      margin: 50px 0 30px 0;
+    }
+    span {
+      color: #313b4b;
+      font-size: remify(15px);
+      line-height: 1.47;
+      width: 46.87em;
+      text-align: center;
+    }
+    .ws-ruler {
+      width: 53.18em;
+      border-top: solid 1px #e7e7e7;
+      margin: 65px 0 55px;
+    }
+}
+
+/////////// Nuestros Workshops //////////////
+.workshops-view__sec3-title {
+  color: #2d3645;
+  font-size: remify(30px);
+  text-align: center;
+}
+
+.workshops-view__sec3-carousel {
+  margin: 50px 0 130px;
+}
+
+.ws-carousel-item {
+  display: flex;
+  flex-direction: column;
+  width: 285px;
+  height: 502px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  outline: none;
+  position: relative;
+}
+
+.ws-carousel-item__box1 {
+  background-image: url(../img/workshops_main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 285px;
+  height: 265px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.ws__box1-title {
+  display: flex;
+  font-size: remify(21px);
+    p {
+      color: #ffffff;
+    }
+    span {
+      color: #62ceca;
+      text-transform: uppercase;
+      padding: 0 0 0 5px;
+    }
+}
+
+.ws__box1-subtitle {
+  color: #ffffff;
+  display: flex;
+  margin: 15px 0 0;
+  font-size: remify(13px);
+    span {
+      padding: 0 0 0 5px;
+    }
+}
+
+.ws__box1-mask {
+  position: absolute;
+  background-color: #2d3645;
+  opacity: 0.92;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.ws-carousel-item__box2 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 28px 23px
+  background-color: #ffffff; 
+    p {
+      color: #2b3443;
+      font-size: remify(12px);
+      line-height: 1.33;
+    }
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      background-color: #62ceca
+      font-size: remify(10px);
+      width: 112.1px;
+      height: 37.4px;
+      border-radius: 28px;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin: 23.7px 0 0;
+    }
+}
+
+.ws-carousel-item__mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #3a4351;
+  opacity: 0.85;
+}
+
+.workshops-carousel__container {
+  max-width: 850px;
+  position: relative
+  center-block();
+    .draggable {
+      padding: 50px !important;
+    }
+
+    .slick-center {
+      transform: scale(1.10);
+      transition: transform .3s ease;
+        .ws-carousel-item__mask {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #3a4351;
+          opacity: 0;
+        }
+        .ws__box1-title, .ws__box1-subtitle {
+          z-index: 1;
+        }
+    }
+
+    .slick-active {
+      transition: transform .3s ease;
+    }
+
+    .slick-slide {
+      ransition: transform .3s ease;
+    }
+    // Arrows 
+    .arrow-left, .arrow-right {
+      position: absolute;
+      top: 50%;
+      cursor: pointer;
+    }
+    .arrow-right {
+      left: 103%;
+      padding: 0 0 0 4em;
+    }
+    .arrow-left {
+      right: 103%;
+      padding: 0 4em 0 0;
+    }
+}

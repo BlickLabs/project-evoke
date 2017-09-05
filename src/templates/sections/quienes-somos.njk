@@ -1,0 +1,185 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block title %}
+Quiénes Somos
+{% endblock %}
+
+{% block content %}
+<section class="quienes-somos-view">
+  {# Banner #}
+  <div class="quienes-somos-view__header">
+    <div class="quienes-somos-view__header-continer">
+      <div class="quienes-somos-view__header-continer__phrase">
+        <span class="evoke-montserrat-semibold phrase__white phrase__white1">"Todo </span> <span class="evoke-montserrat-regular phrase__blue phrase__blue1">el mundo </span> <span class="evoke-montserrat-extrabold phrase__white phrase__white2">es un genio</span>
+        <span class="evoke-montserrat-semibold phrase__blue phrase__blue2">, pero si </span> <span class="evoke-montserrat-bold phrase__white phrase__white3">vas a juzgar </span> <span class="evoke-montserrat-semibold phrase__blue phrase__blue3">a un pez por su </span>
+        <span class="evoke-montserrat-semibold phrase__white phrase__white4">capacidad de </span> <span class="evoke-montserrat-regular phrase__blue phrase__blue4">trepar a un árbol, </span>
+        <span class="evoke-montserrat-regular phrase__blue phrase__blue5">vivirá toda su vida </span> <span class="evoke-montserrat-bold phrase__white phrase__white5">creyendo </span> <span class="evoke-montserrat-regular phrase__white phrase__white6">que es estúpido."</span>
+      </div>
+      <div class="quienes-somos-view__header-continer__autor">
+        <span class="evoke-gandhisans-normal"> - Albert Einstein</span>
+      </div>
+    </div>
+  </div>
+  {# Title #}
+  <div class="quienes-somos-view__title">
+    <p class="evoke-montserrat-bold">Quiénes somos</p>
+    <span class="evoke-gandhisans-normal">Somos una empresa dedicada a generar cambios positivos en empresas, organizaciones e instituciones a través del desarrollo de su gente, la mejora de sus procesos y la alineación con su <b>cultura</b>. Estamos convencidos de que los procesos y estrategias solo funcionan cuando son congruentes con la identidad y mentalidad de las personas. Es por eso que nos enfocamos a que nuestros clientes tengan un profundo entendimiento del ser humano y sus relaciones interpersonales, con el fin de incorporar soft skills que les permitan crear equipos de <b>alto desempeño</b> a través de nuestros servicios.</span>
+  </div>
+  {# Evoke Genius #}
+  <div class="quienes-somos__evoke-genius">
+    {# Rectangle 1 (Evoke) #}
+    <div class="eg-rectangle1">
+      <div class="eg-rectangle__container1">
+        <div class="eg-rectangle__title">
+          <p class="evoke-montserrat-bold">Evoke </p>
+          <p classs="evoke-montserrat-light"> / Evocar</p>
+        </div>
+        <div class="eg-rectangle__ruler"></div>
+        <div class="eg-rectangle__subtitle">
+          <span class="evoke-gandhisans-regular">Traer al frente, o recordarle a la mente consciente.</span>
+          <span class="evoke-gandhisans-regular">- Oxford dictionaries</span>
+        </div>
+      </div>
+    </div>
+    {# Rectangle 2 (Genius) #}
+    <div class="eg-rectangle2">
+      <div class="eg-rectangle__container2">
+        <div class="eg-rectangle__title">
+          <p class="evoke-montserrat-bold">Genius </p>
+          <p classs="evoke-montserrat-extralight"> / Genio</p>
+        </div>
+        <div class="eg-rectangle__ruler"></div>
+        <div class="eg-rectangle__subtitle">
+          <span class="evoke-gandhisans-regular">Inteligencia o gran capacidad y facilidad para crear o inventar cosas nuevas y admirables o para realizar alguna actividad de forma imaginativa y brillante.</span>
+          <span class="evoke-gandhisans-regular">- Oxford dictionaries</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  {# Nuestra Cultura #}
+  <div class="quienes-somos-view__nuestra-cultura">
+    <p class="evoke-montserrat-bold quienes-somos-view__nuestra-cultura__box1">Nuestra cultura</p>
+    <div class="quienes-somos-view__nuestra-cultura__box2">
+      {# Card 1 #}
+      <div class="quienes-somos-view__nuestra-cultura-card nc-card1">
+        <div class="nc-hex">
+          <img src="img/icono_mision.png" alt="flag" width="28.7" height="32.5">
+        </div>
+        <div class="nc-hex__rule"></div>
+        <p class="evoke-montserrat-semibold nc-title">Misión</p>
+        <span class="evoke-gandhisans-normal nc-subtitle">Incrementar el impacto social y económico de personas, equipos y organizaciones a través de retarlos y acompañarlos hacia la creación de un futuro abundante y con significado.</span>
+      </div>
+      {# Card 2 #}
+      <div class="quienes-somos-view__nuestra-cultura-card nc-card2">
+        <div class="nc-hex">
+          <img src="img/icono_vision.png" alt="eye" width="36.3" height="21">
+        </div>
+        <div class="nc-hex__rule"></div>
+        <p class="evoke-montserrat-semibold nc-title">Visión</p>
+        <span class="evoke-gandhisans-normal nc-subtitle">Convertirnos en la empresa número uno en desarrollo humano para empresas y organizaciones de alto desempeño en el continente americano.</span>
+      </div>
+      {# Card 3 #}
+      <div class="quienes-somos-view__nuestra-cultura-card nc-card3">
+        <div class="nc-hex">
+          <img src="img/icono_valores.png" alt="cup" width="31.7" height="34.9">
+        </div>
+        <div class="nc-hex__rule"></div>
+        <p class="evoke-montserrat-semibold nc-title">Valores</p>
+        {# Valores Description #}
+        <div class="nc-card3__subbox">
+          <div class="subbox-1">
+            <p class=""><b>Toma responsabilidad</b></p>
+            <span class="evoke-gandhisans-normal">Reconocer que tenemos la libertad de elegir cómo interpretar, sentirnos y actuar en cada situación, nos da el poder de crear nuestra realidad</span>
+            <p class=""><b>Sé curioso</b></p>
+            <span class="evoke-gandhisans-normal">Reconocer que tenemos la libertad de elegir cómo interpretar, sentirnos y actuar en cada situación, nos da el poder de crear nuestra realidad</span>
+          </div>
+           <div class="subbox-2">
+            <p class=""><b>Encuentra claridad</b></p>
+            <span class="evoke-gandhisans-normal">La capacidad de identificar dónde creamos mayor impacto con  nuestro tiempo, energía, y esfuerzo, nos permite invertirlos efectivamente para cumplir con nuestro propósito</span>
+            <p class=""><b>Mantente con hambre</b></p>
+            <span class="evoke-gandhisans-normal">La mejora continua nace a partir de una insatisfacción positiva, el alto desempeño para crear  los mas grandes resultados  tienen un precio que estamos dispuestos a pagar</span>
+          </div>         
+        </div>
+      </div>
+    </div>
+  </div>
+  {# Nuestro Equipo #}
+  <div class="quienes-somos-view__nuestro-equipo">
+    <p class="evoke-montserrat-bold quienes-somos-view__nuestro-equipo__title">Nuestro equipo</p>
+    <div class="quienes-somos-view__nuestro-equipo__container">
+
+      <div class="quienes-somos-view__nuestro-equipo-box1">
+        <div class="ne-profileimg">
+          <img src="img/recursos_profile.png" alt="profile" width="245" height="260">
+          <div class="ne-socialmedia">
+            <span><img src="img/twitter.svg" alt="twitter" width="15" height="15"></span>
+            <span><img src="img/facebook.svg" alt="facebook" width="15" height="15"></span>
+          </div>
+        </div>
+        <p class="evoke-montserrat-medium ne-name">Miguel Verduzco</p>
+        <span class="evoke-gandhisans-italic ne-title">CO - Founder Evoke my genius</span>
+        <div class="ne-ruler"></div>
+        <p class="evoke-gandhisans-normal ne-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam impedit quaerat nihil cumque rem consequatur exercitationem inventore ipsa similique, modi enim aspernatur ipsum ad esse porro error deserunt ab nemo explicabo.</p>
+        <span class="evoke-montserrat-medium ne-button">Ver más</span>
+      </div>
+
+      <div class="quienes-somos-view__nuestro-equipo-box2"></div>
+
+      <div class="quienes-somos-view__nuestro-equipo-box1">
+        <div class="ne-profileimg">
+          <img src="img/recursos_profile.png" alt="profile" width="245" height="260">
+          <div class="ne-socialmedia">
+            <span><img src="img/twitter.svg" alt="twitter" width="15" height="15"></span>
+            <span><img src="img/facebook.svg" alt="facebook" width="15" height="15"></span>
+          </div>
+        </div>
+        <p class="evoke-montserrat-medium ne-name">Rodrigo Lohr</p>
+        <span class="evoke-gandhisans-italic ne-title">CO - Founder Evoke my genius</span>
+        <div class="ne-ruler"></div>
+        <p class="evoke-gandhisans-normal ne-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam impedit quaerat nihil cumque rem consequatur exercitationem inventore ipsa similique, modi enim aspernatur ipsum ad esse porro error deserunt ab nemo explicabo.</p>
+        <span class="evoke-montserrat-medium ne-button">Ver más</span>      
+      </div>
+    </div>
+  </div>
+  {# Lo que nuestros clientes dicen #}
+  <div class="quienes-somos-view__clientes">
+    <p class="evoke-montserrat-bold quienes-somos-view__clientes__title">Lo que nuestros clientes dicen</p>
+    <div class="quienes-somos-view__clientes__carousel">
+      <div class="clientes-carousel__container">
+        {# Carousel card #}
+        <div class="nc-carousel-item">
+          <span class="evoke-gandhisans-regular nc-city">Ciudad de México</span>
+          <p class="evoke-montserrat-medium nc-name">Miguel Alpuche R.</p>
+          <div class="nc-ruler"></div>
+          <p class="evoke-gandhisans-regular nc-testimonial">“Son una empresa dedicada a generar cambios positivos en empresas, organizaciones e instituciones a través del desarrollo de su gente, la mejora de sus procesos y la alineación con su cultura”</p>
+        </div>
+        {# Carousel card #}
+        <div class="nc-carousel-item">
+          <span class="evoke-gandhisans-regular nc-city">Ciudad de México</span>
+          <p class="evoke-montserrat-medium nc-name">Miguel Alpuche R.</p>
+          <div class="nc-ruler"></div>
+          <p class="evoke-gandhisans-regular nc-testimonial">“Son una empresa dedicada a generar cambios positivos en empresas, organizaciones e instituciones a través del desarrollo de su gente, la mejora de sus procesos y la alineación con su cultura”</p>
+        </div>
+        {# Carousel card #}
+        <div class="nc-carousel-item">
+          <span class="evoke-gandhisans-regular nc-city">Ciudad de México</span>
+          <p class="evoke-montserrat-medium nc-name">Miguel Alpuche R.</p>
+          <div class="nc-ruler"></div>
+          <p class="evoke-gandhisans-regular nc-testimonial">“Son una empresa dedicada a generar cambios positivos en empresas, organizaciones e instituciones a través del desarrollo de su gente, la mejora de sus procesos y la alineación con su cultura”</p>
+        </div>
+        {# Carousel card #}
+        <div class="nc-carousel-item">
+          <span class="evoke-gandhisans-regular nc-city">Ciudad de México</span>
+          <p class="evoke-montserrat-medium nc-name">Miguel Alpuche R.</p>
+          <div class="nc-ruler"></div>
+          <p class="evoke-gandhisans-regular nc-testimonial">“Son una empresa dedicada a generar cambios positivos en empresas, organizaciones e instituciones a través del desarrollo de su gente, la mejora de sus procesos y la alineación con su cultura”</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
