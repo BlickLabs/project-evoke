@@ -292,7 +292,7 @@ a {
   margin-top: 45px;
 }
 
-.blog-box2__img {
+ .blog-box2__img {
   position: relative;
 }
 
@@ -300,14 +300,16 @@ a {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #fc4e44;
+  background-image: url(../img/blog_hover.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 100%;
   height: calc(100% - 4px);
   opacity: 0;
   transition: 0.5s;
 }
 
-.blog-box2__mask:hover {
+.blog-box1__mask, .blog-box2__mask:hover {
   position: absolute;
   left: 0;
   top: 0;
