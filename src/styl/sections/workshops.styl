@@ -1,6 +1,6 @@
 ////////// Workshops servicios ///////////
 .workshops-view__main {
-  margin: 103px 0 0;
+  margin: 85px 0 0;
   display: flex;
   center-block();
   justify-content: space-between;
@@ -104,13 +104,14 @@
 }
 
 .ws-carousel-item {
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 285px;
   height: 502px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
   outline: none;
-  position: relative;
 }
 
 .ws-carousel-item__box1 {
@@ -133,9 +134,17 @@
       color: #ffffff;
     }
     span {
-      color: #62ceca;
       text-transform: uppercase;
       padding: 0 0 0 5px;
+    }
+    .ws__box1-title-trust{
+      color: #62ceca;
+    }
+    .ws__box1-title-purpose {
+      color: #e50075;
+    }
+    .ws__box1-title-power {
+      color: #a2e12d;
     }
 }
 
@@ -169,19 +178,29 @@
       font-size: remify(12px);
       line-height: 1.33;
     }
-    span {
+    .box2-button {
       display: flex;
       justify-content: center;
       align-items: center;
       color: #ffffff;
-      background-color: #62ceca
       font-size: remify(10px);
       width: 112.1px;
       height: 37.4px;
       border-radius: 28px;
       text-transform: uppercase;
-      cursor: pointer;
       margin: 23.7px 0 0;
+      cursor: pointer;
+    }
+    .box2-button__blue {
+      background-color: #62ceca;
+    }
+    .box2-button__pink {
+      background-color: #e50075;
+      margin: 50px 0 0;
+    }
+    .box2-button__green {
+      background-color: #a2e12d;
+      margin: 50px 0 0;
     }
 }
 
@@ -191,13 +210,13 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #3a4351;
   opacity: 0.85;
+  background-color: #3a4351;
+  z-index: 1;
 }
 
 .workshops-carousel__container {
   max-width: 850px;
-  position: relative
   center-block();
     .draggable {
       padding: 50px !important;
@@ -206,6 +225,8 @@
     .slick-center {
       transform: scale(1.10);
       transition: transform .3s ease;
+      position: relative;
+      z-index: 2;
         .ws-carousel-item__mask {
           position: absolute;
           width: 100%;
@@ -225,7 +246,7 @@
     }
 
     .slick-slide {
-      ransition: transform .3s ease;
+      ransition: transform .3s ease;   
     }
     // Arrows 
     .arrow-left, .arrow-right {
