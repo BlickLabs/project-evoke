@@ -3,6 +3,7 @@ setTimeout(function() {
     strings: ["genius", "potential", "creativity", "innovation", "greatness"],
     typeSpeed: 50,
     backSpeed: 30,
-    backDelay: 700
+    backDelay: 700,
+    loop: true
   });
 }, 1000);
