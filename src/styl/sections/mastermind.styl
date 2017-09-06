@@ -9,12 +9,8 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-    .mastermind-view__main-title {
-      color: #2d3645;
-      font-size: remify(30px);
-      margin: 65px 0 0;
-    }
-    span {
+
+    .mastermind-view__main-servicios {
       color: #acacac;
       font-size: remify(23px);
       margin: 15px 0;
@@ -26,6 +22,30 @@
       line-height: 1.47;
       width: 46.87em;
       margin: 0 0 75px 0;
+    }
+}
+
+.mastermind-view__main-container {
+  display: flex;
+  align-items: center;
+  margin: 65px 0 0;
+    .mm-hex-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../img/servicios_hex.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 40px;
+      height: 40px;
+        img {
+          margin: 0 0 5px 0;
+        }
+    }
+    .mastermind-view__main-title {
+      color: #2d3645;
+      font-size: remify(30px);
+      margin: 0 0 0 5px;
     }
 }
 
@@ -103,6 +123,11 @@
   border-radius: 2px;
   width: 46.12em;
   padding: 18px 63px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: -50px
     p {
       color: #2d3645;
       font-size: remify(14px);

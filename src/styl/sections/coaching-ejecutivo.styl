@@ -4,15 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-    .coaching-ejecutivo__main-title {
-      margin: 56px 0 15px;
-      color: #2d3645;
-      font-size: remify(30px);
-    }
-    span {
+    .coaching-ejecutivo__main-servicios {
       color: #cecece;
       font-size: remify(23px);
-      margin: 0 0 30px;
+      margin: 12px 0 35px;
     }
     .coaching-ejecutivo__main-subtitle {
       width: 45em;
@@ -21,6 +16,30 @@
       line-height: 1.47;
       text-align: center;
       margin: 0 0 60px;
+    }
+}
+
+.coaching-ejecutivo__main-container {
+  display: flex;
+  align-items: center;
+  margin: 65px 0 0;
+    .ce-hex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../img/servicios_hex.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 40px;
+      height: 40px;
+        img {
+          margin: 0 0 5px 0;
+        }
+    }
+    .coaching-ejecutivo__main-title {
+      color: #2d3645;
+      font-size: remify(30px);
+      margin: 0 0 0 5px;
     }
 }
 
@@ -99,6 +118,11 @@
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
   width: 46.12em;
   padding: 0 62px 0;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  top: -65px;
     p {
       color: #a2e12d;
       font-size: remify(14px);

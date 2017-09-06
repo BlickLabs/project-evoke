@@ -14,7 +14,7 @@ function doSomething(scroll_pos) {
         }
     } else {
         siteNavbar.classList.add('nav-transparent-bg');
-        siteNavbar.classList.remove('nav-standar-bg') ; 
+        siteNavbar.classList.remove('nav-standar-bg');
     }
 }
 
