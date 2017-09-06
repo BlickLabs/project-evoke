@@ -2,7 +2,6 @@
 .workshops-view__main {
   margin: 103px 0 0;
   display: flex;
-  max-width: 1280px;
   center-block();
   justify-content: space-between;
 }
@@ -15,9 +14,9 @@
     .workshops-view__box1-title {
       color: #2d3645;
       font-size: remify(30px);
-      margin: 45px 0 0;
+      margin: 0 0 0 5px;
     }
-    span {
+    .workshops-view__box1-servicios {
       color: #cecece;
       font-size: remify(23px);
       margin: 10px 0 0;
@@ -25,8 +24,24 @@
     .workshops-view__box1-subtitle {
       color: #2d3746;
       font-size: remify(15px);
-      margin: 10px 0 0;
+      margin: 15px 0 0;
       line-height: 1.47;
+    }
+}
+
+.workshops-view__box1-container {
+  display: flex;
+  align-items: center;
+  margin: 45px 0 0;
+    .ws-hex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/servicios_hex.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
     }
 }
 
