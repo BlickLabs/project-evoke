@@ -19,8 +19,7 @@
     "loaders.css": "^0.1.2",
     "normalize-css": "^5.0.0",
     "slick-carousel": "slick.js#^1.7.1",
-    "typed.js": "^2.0.5",
-    "aos": "^2.2.0"
+    "typed.js": "^2.0.5"
   },
   "resolutions": {
     "jquery": "^3.1.0"
