@@ -13,6 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
     <link rel="manifest" href="img/favicons/manifest.json">
     <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <meta name="theme-color" content="#ffffff">
     <title>
 Mastermind
@@ -54,7 +55,7 @@ Mastermind
       <span class="mm-hex-1"><img src="img/icono_mastermind.png" width="20" height="25"></span>
       <p class="evoke-montserrat-bold mastermind-view__main-title">Mastermind</p>
     </div>
-    <span class="evoke-montserrat-light mastermind-view__main-servicios">Servicios</span>
+    <a href="servicios.html" class="mastermind-view__main-servicios"><span class="evoke-montserrat-light">Servicios</span></a>
     <p class="evoke-gandhisans-regular mastermind-view__main-subtitle">Descritos por primera vez por Napoleon Hill en el clásico de 1937 “Think and Grow Rich” los MasterMinds han sido utilizados por algunas de las personas más exitosas para potencializar su impacto, conocimiento, energía y recursos. Desde Henry Ford, Thomas A. Edison y Harvey Firestone, el grupo de escritores JC. Lewis y J.R.R. Tolkien, el grupo de Andrew Carnegie hasta algunos empresarios y emprendedores de nuestros tiempos, han usado los MasterMinds para potencializar el desarrollo humano y su éxito exponencial.</p>
   </div>
   
@@ -100,7 +101,7 @@ Mastermind
       <p class="evoke-montserrat-bold mastermind-view__dp-title">Diseño y planeación</p>
     </div>
     <p class="evoke-gandhisans-regular mastermind-view__dp-subtitle">Elegir a las personas indicadas, definir el propósito del grupo y crear el contexto adecuado son algunos de los elementos más importantes para el éxito de un MasterMind. En esta etapa uno de nuestros coaches o consultores expertos en MasterMinds trabaja contigo para explorar y crear claridad en lo que quieres lograr, tu más grande visión para tu grupo de MasterMind y te provee la guía y orientación para diseñar las mejores prácticas para alcanzar el resultado que deseas.</p> 
-    <div class="mastermind__hex1"></div>
+    <div class="mastermind__hex1" data-aos="zoom-out" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-sine"></div>
   </div>
   
   <div class="mastermind-view__creacion">
@@ -145,7 +146,7 @@ Mastermind
           </ul>
         </div>
       </div>
-      <div class="mastermind__hex2"></div>
+      <div class="mastermind__hex2" data-aos="zoom-out" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-sine"></div>
     </div>
   </div>
   
@@ -206,5 +207,9 @@ Mastermind
     <script src="js/project-evoke.js"></script>
     
     
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
